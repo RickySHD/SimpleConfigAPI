@@ -1,4 +1,4 @@
-package dev.rickyshd;
+package dev.rickyshd.simpleconfig;
 
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
