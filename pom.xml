@@ -5,8 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dev.rickyshd</groupId>
-    <artifactId>SimpleConfigAPI</artifactId>
+    <artifactId>simpleconfigapi</artifactId>
     <version>1.0</version>
+
+    <name>SimpleConfigAPI</name>
 
     <distributionManagement>
         <repository>
