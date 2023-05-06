@@ -1,15 +1,16 @@
 package dev.rickyshd.simpleconfig;
 
+import org.bukkit.configuration.Configuration;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import javax.annotation.Nonnull;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A better abstraction of default {@link org.bukkit.configuration.file.YamlConfiguration}
  * included with Bukkit-like plugins.
  * @since 1.0
  */
-public interface Config {
+public interface Config extends Configuration, ConfigurationSection {
     /**
      * Creates a new configuration file reference.
      * @param plugin the {@link JavaPlugin} the config file belongs to.
@@ -17,7 +18,7 @@ public interface Config {
      * @return a new configuration file reference.
      * @since 1.0
      */
-    static @Nonnull Config of(final JavaPlugin plugin, final String filename) {
+    static @NotNull Config of(final JavaPlugin plugin, final String filename) {
         String _filename = filename;
         if (!_filename.endsWith(".yml")) _filename += ".yml";
 
